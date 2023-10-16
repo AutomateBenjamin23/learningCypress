@@ -1,0 +1,13 @@
+
+  {
+    "validUser": {
+      "username": "getDriver",
+      "password": "Password123", 
+      "email": "getdriver23@gmail.com",
+      "body": "Fixtures are a great way to mock data for responses to routes"
+    }
+   
+  }
+  
+  
+
