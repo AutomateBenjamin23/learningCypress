@@ -1,12 +1,15 @@
+import locators from 'C:/Users/pride/CypressAutomationVuori/cypress/e2e/locators.cy.js'; 
+import config from 'C:/Users/pride/CypressAutomationVuori/cypress/e2e/config.js';
+
 class HomePage {
     visit() {
       // Define the method to navigate to the website 
-      cy.visit('https://vuoriclothing.com');
+      cy.visit(config.websiteURL);
     }
   
     clickAccountTab() {
       // Define the method to click the "Account" tab 
-      cy.get('accountTab').click()
+      cy.get(locators.homePage.accountTab).click(); 
     }
   }
   

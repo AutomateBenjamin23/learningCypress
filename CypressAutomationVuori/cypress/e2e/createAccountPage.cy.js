@@ -1,27 +1,25 @@
+import locators from 'C:/Users/pride/CypressAutomationVuori/cypress/e2e/locators.cy.js';
+
 class CreateAccountPage {
     fillFirstName(firstName) {
-      // Define the method to populate the First Name field
-      cy.get('firstNameInput').type(firstName);
+      // Define the method to populate the First Name field...
+      cy.get(locators.createAccountPage.firstNameInput).type(firstName);
     }
   
     fillLastName(lastName) {
-      // Define the method to populate the Last Name field
-      cy.get('lastNameInput').type(lastName);
+      cy.get(locators.createAccountPage.lastNameInput).type(lastName);
     }
   
     fillEmail(email) {
-      // Define the method to populate the Email field
-      cy.get('emailInput').type(email);
+      cy.get(locators.createAccountPage.emailInput).type(email);
     }
   
     fillPassword(password) {
-      // Define the method to populate the Password field
-      cy.get('passwordInput').type(password);
+      cy.get(locators.createAccountPage.passwordInput).type(password);
     }
   
     clickCreateAccountButton() {
-      // Define the method to click the "Create Account" button
-      cy.get('createAccountButton').click();
+      cy.get(locators.createAccountPage.createAccountButton).click();
     }
   }
   
